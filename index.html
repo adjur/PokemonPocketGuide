@@ -1,13 +1,102 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Pocket Guide</title>
+</head>
+
+<body>
+  <div id="background-image"></div>
+  <div id="page-container">
+    <div id="navBar">
+      <nav class="navbar navbar-expand-lg custom-navbar-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pokémon Pocket Guide</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pokédex</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Type Effectivness
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Overview</a></li>
+                  <li><a class="dropdown-item" href="#">Practice</a></li>
+                  <!-- <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team Building</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fan Art Gallery</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- <div id="root"></div> -->
+    <footer id="footer" class="bg-dark text-white mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">Pokédex</a></li>
+              <li><a href="#" class="text-white">Team Building</a></li>
+              <li><a href="#" class="text-white">Practice Games</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <p>Email: contact@example.com</p>
+            <p>Discord Channel</p>
+          </div>
+          <div class="col-md-3">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white">Facebook</a><br>
+            <a href="#" class="text-white">Twitter</a><br>
+            <a href="#" class="text-white">Instagram</a>
+          </div>
+          <div class="col-md-3">
+            <h5>About</h5>
+            <p>Pokémon Pocket Guide is the ultimate guide to Pokémon training and battles. <br>Learn, play, and become a champion!
+            </p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p>Copyright © 2024 Pokémon Pocket Guide</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
